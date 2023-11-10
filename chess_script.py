@@ -41,22 +41,22 @@ def generateKnightAdj():  # creates an adjacency matrix of all possible horse' m
     for row in range(1, 9):
         for col in range(1, 9):
             idx = getIdx(row, col)
-            if inBounds(row + 2, col + 1):
-                adj[idx].append(getIdx(row + 2, col + 1))
-            if inBounds(row + 1, col + 2):
-                adj[idx].append(getIdx(row + 1, col + 2))
-            if inBounds(row - 1, col + 2):
-                adj[idx].append(getIdx(row - 1, col + 2))
-            if inBounds(row - 2, col + 1):
-                adj[idx].append(getIdx(row - 2, col + 1))
-            if inBounds(row - 2, col - 1):
-                adj[idx].append(getIdx(row - 2, col - 1))
-            if inBounds(row - 1, col - 2):
-                adj[idx].append(getIdx(row - 1, col - 2))
-            if inBounds(row + 1, col - 2):
-                adj[idx].append(getIdx(row + 1, col - 2))
-            if inBounds(row + 2, col - 1):
-                adj[idx].append(getIdx(row + 2, col - 1))
+            if inBounds(row + 3, col + 1):
+                adj[idx].append(getIdx(row + 3, col + 1))
+            if inBounds(row + 1, col + 3):
+                adj[idx].append(getIdx(row + 1, col + 3))
+            if inBounds(row - 1, col + 3):
+                adj[idx].append(getIdx(row - 1, col + 3))
+            if inBounds(row - 3, col + 1):
+                adj[idx].append(getIdx(row - 3, col + 1))
+            if inBounds(row - 3, col - 1):
+                adj[idx].append(getIdx(row - 3, col - 1))
+            if inBounds(row - 1, col - 3):
+                adj[idx].append(getIdx(row - 1, col - 3))
+            if inBounds(row + 1, col - 3):
+                adj[idx].append(getIdx(row + 1, col - 3))
+            if inBounds(row + 3, col - 1):
+                adj[idx].append(getIdx(row + 3, col - 1))
 
 
 def resetStructures():
